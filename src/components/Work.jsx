@@ -11,6 +11,7 @@ import space from "../assets/Space.png";
 import hypepower from "../assets/Hypepower.png";
 import airheads from "../assets/airheads.png";
 import tourism from "../assets/tourism.png";
+import diceGame from "../assets/dice-game.png";
 
 const projectsData = [
     {
@@ -42,6 +43,11 @@ const projectsData = [
         projName: "Hosting Page",
         projLink: "http://webdeveloper032.freecluster.eu/Hosting-Page/",
         projImg: hostingPage,
+    },
+    {
+        projName: "Dice Game",
+        projLink: "https://dice-game-521db.web.app/",
+        projImg: diceGame,
     },
     {
         projName: "Space Project",
