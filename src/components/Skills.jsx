@@ -98,7 +98,7 @@ const Skills = () => {
     return (
         <section
             name="skills"
-            className="w-full"
+            className="w-full px-4"
             style={{
                 backgroundImage:
                     "linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )",

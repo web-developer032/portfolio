@@ -4,8 +4,7 @@ const About = () => {
     return (
         <section
             name="about"
-            className="w-full h-screen"
-            // #6d28d9
+            className="w-full h-screen px-4"
             style={{
                 backgroundImage:
                     "linear-gradient( -70deg, rgba(109, 40, 217, 0.9) 0%, rgba(109, 40, 217, 0.9) 30%, transparent 30% )",

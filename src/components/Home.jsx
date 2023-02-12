@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <section
             name="home"
-            className="w-full h-screen"
+            className="w-full h-screen px-8"
             style={{
                 backgroundImage:
                     "linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )",
@@ -13,7 +13,7 @@ const Home = () => {
             }}
         >
             {/* Container */}
-            <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+            <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full">
                 <p className="text-violet-700">Hi, my name is</p>
                 <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">Mubasher Mukhtar</h1>
                 <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">

@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
     return (
-        <section className="z-50 fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192fdc] text-gray-300">
+        <section className="z-50 fixed w-full  flex justify-between items-center px-4 py-2 bg-[#0a192fdc] text-gray-300">
             <div style={{ borderRadius: "50%" }}>
                 <img src={Logo} alt="Logo_Image" style={{ width: "50px" }} />
             </div>

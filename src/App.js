@@ -9,7 +9,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <section className="bg-[#0a192f] text-gray-300 p-4 grid gap-16">
+            <section className="bg-[#0a192f] text-gray-300  grid gap-16">
                 <Home />
                 <About />
                 <Skills />

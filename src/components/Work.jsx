@@ -31,7 +31,7 @@ const projectsData = [
     },
     {
         projName: "Crypto Website",
-        projLink: "https://632702f9c1fda71dbad5fb39--fastidious-bonbon-b9b055.netlify.app/",
+        projLink: "https://cryptodesign.netlify.app/",
         projImg: Crypto,
     },
     {
@@ -76,7 +76,7 @@ const Work = () => {
     return (
         <section
             name="work"
-            className="w-full  "
+            className="w-full  px-4"
             style={{
                 backgroundImage:
                     "linear-gradient( -70deg, rgba(109, 40, 217, 0.9) 0%, rgba(109, 40, 217, 0.9) 30%, transparent 30% )",

@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section
             name="contact"
-            className="w-full h-screen flex justify-center"
+            className="w-full h-screen flex justify-center px-4"
             style={{
                 backgroundImage:
                     "linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )",
