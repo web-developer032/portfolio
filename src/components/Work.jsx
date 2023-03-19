@@ -10,7 +10,7 @@ import hostingPage from "../assets/hostingPage.png";
 import space from "../assets/Space.png";
 import hypepower from "../assets/Hypepower.png";
 import airheads from "../assets/airheads.png";
-import tourism from "../assets/tourism.png";
+import ninjaPoll from "../assets/ninja-poll.png";
 import diceGame from "../assets/dice-game.png";
 
 const projectsData = [
@@ -66,9 +66,9 @@ const projectsData = [
     },
 
     {
-        projName: "Tourism",
-        projLink: "https://natours-mubasher.herokuapp.com/",
-        projImg: tourism,
+        projName: "Ninja Poll",
+        projLink: "https://ninja-poll-aa2a5.web.app",
+        projImg: ninjaPoll,
     },
 ];
 
