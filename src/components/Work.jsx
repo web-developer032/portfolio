@@ -12,6 +12,7 @@ import hypepower from "../assets/Hypepower.png";
 import airheads from "../assets/airheads.png";
 import ninjaPoll from "../assets/ninja-poll.png";
 import diceGame from "../assets/dice-game.png";
+import budgety from "../assets/budgety.png";
 
 const projectsData = [
     {
@@ -48,6 +49,11 @@ const projectsData = [
         projName: "Dice Game",
         projLink: "https://dice-game-521db.web.app/",
         projImg: diceGame,
+    },
+    {
+        projName: "Budgety App",
+        projLink: "http://webdeveloper032.freecluster.eu/Budgety/",
+        projImg: budgety,
     },
     {
         projName: "Space Project",
