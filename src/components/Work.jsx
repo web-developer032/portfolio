@@ -13,6 +13,7 @@ import airheads from "../assets/airheads.png";
 import ninjaPoll from "../assets/ninja-poll.png";
 import diceGame from "../assets/dice-game.png";
 import budgety from "../assets/budgety.png";
+import dexordi from "../assets/dexordi.png";
 
 const projectsData = [
     {
@@ -75,6 +76,12 @@ const projectsData = [
         projName: "Ninja Poll",
         projLink: "https://ninja-poll-aa2a5.web.app",
         projImg: ninjaPoll,
+    },
+
+    {
+        projName: "DexOrdi",
+        projLink: "https://dexordi-75bef.web.app/",
+        projImg: dexordi,
     },
 ];
 
