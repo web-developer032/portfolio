@@ -6,6 +6,7 @@ import CSS from "../assets/css.png";
 import Tailwind from "../assets/tailwind.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
+import NextJS from "../assets/next-js.svg";
 import Node from "../assets/node.png";
 import FireBase from "../assets/firebase.png";
 import Svelte from "../assets/svelte-icon.svg";
@@ -36,6 +37,10 @@ let skills = [
     {
         img: Svelte,
         text: "Svelte",
+    },
+    {
+        img: NextJS,
+        text: "NextJS",
     },
     {
         img: Node,

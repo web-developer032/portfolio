@@ -14,12 +14,35 @@ import ninjaPoll from "../assets/ninja-poll.png";
 import diceGame from "../assets/dice-game.png";
 import budgety from "../assets/budgety.png";
 import dexordi from "../assets/dexordi.png";
+import dexordiLanding from "../assets/dexordiLanding.png";
+import xoommaps from "../assets/xoommaps.png";
+import zerodocs from "../assets/zerodocs.png";
+import policat from "../assets/policat.png";
+
+import canvasCircular from "../assets/canvas-circular.jpeg";
+import canvasFirework from "../assets/canvasFirework.png";
+import canvasGalacticLight from "../assets/canvasGalacticLight.png";
+import canvasGame from "../assets/canvasGame.png";
+import canvasGravity from "../assets/canvasGravity.jpeg";
+import canvasCollision from "../assets/canvasCollision.jpeg";
+import canvasExpandable from "../assets/canvasExpandableCircles.jpeg";
+import canvasTrons from "../assets/canvasTrons.png";
 
 const projectsData = [
     {
         projName: "Natours",
         projLink: "http://webdeveloper032.freecluster.eu/Natours/?i=1",
         projImg: natours,
+    },
+    {
+        projName: "XoomMaps",
+        projLink: "https://v3.xoommaps.com/",
+        projImg: xoommaps,
+    },
+    {
+        projName: "ZeroDocs",
+        projLink: "https://zerodocs.com/",
+        projImg: zerodocs,
     },
     {
         projName: "Booking Hotel Landing Page",
@@ -35,6 +58,11 @@ const projectsData = [
         projName: "Crypto Website",
         projLink: "https://cryptodesign.netlify.app/",
         projImg: Crypto,
+    },
+    {
+        projName: "PoliCat",
+        projLink: "https://policat-13417.web.app/",
+        projImg: policat,
     },
     {
         projName: "Louche Portfolio",
@@ -56,6 +84,12 @@ const projectsData = [
         projLink: "http://webdeveloper032.freecluster.eu/Budgety/",
         projImg: budgety,
     },
+    {
+        projName: "DexOrdi Landing Page",
+        projLink: "https://dexordi-landing.web.app/",
+        projImg: dexordiLanding,
+    },
+
     {
         projName: "Space Project",
         projLink: "https://spaceproject-4c47d.web.app/",
@@ -85,6 +119,49 @@ const projectsData = [
     },
 ];
 
+const canvasProjectsData = [
+    {
+        projName: "Canvas Circular Motion",
+        projLink: "https://canvas-animation-63dbd.web.app/",
+        projImg: canvasCircular,
+    },
+    {
+        projName: "Canvas Firework",
+        projLink: "https://canvasfireworks.web.app/",
+        projImg: canvasFirework,
+    },
+    {
+        projName: "Canvas Galactic Light",
+        projLink: "https://canvasgalacticlight.web.app",
+        projImg: canvasGalacticLight,
+    },
+    {
+        projName: "Canvas Game",
+        projLink: "https://canvasgame.web.app/",
+        projImg: canvasGame,
+    },
+    {
+        projName: "Canvas Gravity",
+        projLink: "https://canvasgravity.web.app/",
+        projImg: canvasGravity,
+    },
+    {
+        projName: "Canvas Collision",
+        projLink: "https://canvasparticlecollision.web.app/",
+        projImg: canvasCollision,
+    },
+    {
+        projName: "Canvas Expandables",
+        projLink: "https://canvasrandomcircles.web.app/",
+        projImg: canvasExpandable,
+    },
+    {
+        projName: "Canvas Trons Show",
+        projLink: "https://canvastroncircles.web.app",
+        projImg: canvasTrons,
+    },
+];
+
 const Work = () => {
     return (
         <section
@@ -96,7 +173,7 @@ const Work = () => {
                 backgroundAttachment: "fixed",
             }}
         >
-            <div className="max-w-[1000px] mx-auto  w-full">
+            <div className="max-w-[1000px] mx-auto w-full mb-8">
                 <div className="pb-8">
                     <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-violet-700">
                         Work
@@ -107,6 +184,16 @@ const Work = () => {
                 {/* Container */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                     {projectsData.map((items, key) => (
+                        <ProjectCard {...items} key={key} />
+                    ))}
+                </div>
+            </div>
+
+            <div className="max-w-[1000px] mx-auto  w-full">
+                <p className="py-6">{"//"} Check out some of my canvas work</p>
+
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    {canvasProjectsData.map((items, key) => (
                         <ProjectCard {...items} key={key} />
                     ))}
                 </div>

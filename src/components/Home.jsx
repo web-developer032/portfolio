@@ -14,14 +14,16 @@ const Home = () => {
         >
             {/* Container */}
             <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full">
-                <p className="text-violet-700">Hi, my name is</p>
-                <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">Mubasher Mukhtar</h1>
-                <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-                    I'm a Sr.Frontend & <br /> Jr.MERN Stack Developer.
+                <p className="text-violet-700">Hi, myself</p>
+                <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] mb-2">
+                    Mubasher Mukhtar
+                </h1>
+                <h2 className="text-3xl sm:text-4xl font-bold text-[#8892b0]">
+                    &lang; MERN STACK DEVELOPER / &rang;
                 </h2>
-                <p className="text-[#8892b0] py-4 max-w-[700px]">
-                    I’m a Frontend developer specializing in building exceptional digital
-                    experiences. Currently, I’m focused on building full-stack web applications.
+                <p className="text-[#8892b0] py-4 max-w-[700px] ">
+                    Specialized in building exceptional, digital experienced full-stack Web
+                    Applications.
                 </p>
                 <div>
                     <button
