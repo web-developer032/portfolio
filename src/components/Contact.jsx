@@ -17,9 +17,9 @@ const Contact = () => {
                 className="flex flex-col max-w-[600px] w-full text-neutral-800"
             >
                 <div className="pb-8 text-gray-300">
-                    <p className="text-4xl   font-bold inline-block border-b-4 border-violet-700 w-max mx-auto">
+                    <h2 className="text-4xl   font-bold inline-block border-b-4 border-violet-700 w-max mx-auto">
                         Contact
-                    </p>
+                    </h2>
                     <p className="py-4">
                         {"//"} Submit the form below or shoot me an email -
                         mubasherali0331@gmail@gmail.com

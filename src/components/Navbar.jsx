@@ -41,6 +41,12 @@ const Navbar = () => {
                         Work
                     </Link>
                 </li>
+
+                <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
+                    <Link to="projects" smooth={true} duration={500}>
+                        Projects
+                    </Link>
+                </li>
                 <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
                     <Link to="contact" smooth={true} duration={500}>
                         Contact
@@ -79,6 +85,11 @@ const Navbar = () => {
                 <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
                     <Link onClick={handleClick} to="work" smooth={true} duration={500}>
                         Work
+                    </Link>
+                </li>
+                <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
+                    <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                        Projects
                     </Link>
                 </li>
                 <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">

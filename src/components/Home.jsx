@@ -25,6 +25,7 @@ const Home = () => {
                     Specialized in building exceptional, digital experienced full-stack Web
                     Applications.
                 </p>
+
                 <div>
                     <button
                         onClick={() => {
