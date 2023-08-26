@@ -5,13 +5,17 @@ import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import Tailwind from "../assets/tailwind.png";
 import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import NextJS from "../assets/next-js.svg";
-import Node from "../assets/node.png";
-import FireBase from "../assets/firebase.png";
+import ReactIcon from "../assets/react.png";
+import Redux from "../assets/redux.svg";
 import Svelte from "../assets/svelte-icon.svg";
+import NextJS from "../assets/next-js.svg";
+import Axios from "../assets/axios.svg";
+import Node from "../assets/node.png";
+import GraphQL from "../assets/GraphQL.svg";
+import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import Mongo from "../assets/mongo.png";
+import SQL from "../assets/sql.png";
 
 let skills = [
     {
@@ -23,16 +27,20 @@ let skills = [
         text: "CSS",
     },
     {
-        img: JavaScript,
-        text: "JavaScript",
-    },
-    {
         img: Tailwind,
         text: "Tailwind",
     },
     {
-        img: ReactImg,
+        img: JavaScript,
+        text: "JavaScript",
+    },
+    {
+        img: ReactIcon,
         text: "ReactJS",
+    },
+    {
+        img: Redux,
+        text: "Redux",
     },
     {
         img: Svelte,
@@ -43,12 +51,24 @@ let skills = [
         text: "NextJS",
     },
     {
+        img: Axios,
+        text: "Axios",
+    },
+    {
         img: Node,
         text: "NodeJS",
     },
     {
+        img: GraphQL,
+        text: "GraphQL",
+    },
+    {
         img: Mongo,
         text: "MongoDB",
+    },
+    {
+        img: SQL,
+        text: "SQL",
     },
     {
         img: FireBase,
@@ -69,9 +89,9 @@ function Tilt(props) {
     }, [options]);
 
     return (
-        <div ref={tilt} {...rest}>
+        <article ref={tilt} {...rest}>
             {props.children}
-        </div>
+        </article>
     );
 }
 
@@ -83,19 +103,19 @@ function Skill({ img, text }) {
     };
 
     return (
-        <>
-            <Tilt className="box" options={options}>
-                <div
-                    className="pt-6 shadow-md skill-box"
-                    style={{
-                        cursor: "pointer ",
-                    }}
-                >
-                    <img className="w-20 h-20 mx-auto" src={img} alt="HTML icon" />
-                    <p className="my-4 text-blue-700">{text}</p>
-                </div>
-            </Tilt>
-        </>
+        <Tilt className="box" options={options}>
+            <div
+                className="pt-6 shadow-md skill-box"
+                style={{
+                    cursor: "pointer ",
+                }}
+            >
+                <img className="w-20 h-20 mx-auto" src={img} alt={`${text} icon`} />
+                <h3 className="my-4 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-white to-blue-600">
+                    {text}
+                </h3>
+            </div>
+        </Tilt>
     );
 }
 
@@ -111,7 +131,7 @@ const Skills = () => {
             }}
         >
             {/* Container */}
-            <div className="max-w-[1000px] mx-auto w-full">
+            <section className="max-w-[1000px] mx-auto w-full">
                 <div>
                     <h2 className="text-4xl font-bold inline border-b-4 border-violet-700 ">
                         Skills
@@ -124,7 +144,7 @@ const Skills = () => {
                         <Skill {...skill} key={skill.text} />
                     ))}
                 </div>
-            </div>
+            </section>
         </section>
     );
 };

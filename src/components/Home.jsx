@@ -22,7 +22,7 @@ const Home = () => {
                     &lang; MERN STACK DEVELOPER / &rang;
                 </h2>
                 <p className="text-[#8892b0] py-4 max-w-[700px] ">
-                    Specialized in building exceptional, digital experienced full-stack Web
+                    Specialized in building exceptional, digital experienced MERN-STACK Web
                     Applications.
                 </p>
 

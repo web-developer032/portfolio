@@ -28,10 +28,21 @@ const About = () => {
                     </div>
                     <div className="bg-white p-4 px-8 text-gray-900 text-left skew-x-12">
                         <p className="-skew-x-2">
-                            I am passionate about building excellent websites & web applications
-                            according to clients requirements. Which are ranging from individuals
-                            and small-businesses all the way to large enterprise corporations. What
-                            would you do if you had a expert web developer available at your
+                            I am passionate about building excellent{" "}
+                            <b className="border-b-4 border-violet-700">Websites</b> &{" "}
+                            <b className="border-b-4 border-violet-700">Web Applications</b> with{" "}
+                            <b className="border-b-4 border-violet-700">4 years</b> of experience
+                            according to clients requirements. Which are ranging from{" "}
+                            <b className="border-b-4 border-violet-700">
+                                individuals and small-businesses
+                            </b>{" "}
+                            all the way to{" "}
+                            <b className="border-b-4 border-violet-700">
+                                large enterprise corporations
+                            </b>
+                            .
+                            <br />
+                            What would you do if you had a expert web developer available at your
                             fingertips?
                         </p>
                     </div>
