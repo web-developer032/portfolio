@@ -7,19 +7,19 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-    return (
-        <>
-            <Navbar />
-            <section className="bg-[#0a192f] text-gray-300  grid gap-16">
-                <Home />
-                <About />
-                <Skills />
-                <Work />
-                <Projects />
-                <Contact />
-            </section>
-        </>
-    );
+  return (
+    <>
+      <Navbar />
+      <section className="bg-[#0a192f] text-gray-300  grid gap-16">
+        <Home />
+        <About />
+        <Skills />
+        <Work />
+        <Projects />
+        <Contact />
+      </section>
+    </>
+  );
 }
 
 export default App;
