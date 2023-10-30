@@ -31,15 +31,15 @@ function Work() {
                         </h3>
 
                         <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                            <li>Team Lead</li>
-                            <li>Design Flexible UI</li>
-                            <li>Rest API Developer</li>
-                            <li>API Integeration (Data Manager)</li>
-                            <li>
+                            <li className="cursor-default">Team Lead</li>
+                            <li className="cursor-default">Design Flexible UI</li>
+                            <li className="cursor-default">Rest API Developer</li>
+                            <li className="cursor-default">API Integeration (Data Manager)</li>
+                            <li className="cursor-default">
                                 Code architecture maintainer so that it can be scalable down the
                                 road
                             </li>
-                            <li>
+                            <li className="cursor-default">
                                 Collaborate with (frontend, backend) engineers to design and create
                                 advanced, elegant efficient systems
                             </li>
@@ -57,14 +57,14 @@ function Work() {
                         </h3>
 
                         <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                            <li>Design Flexible UI</li>
-                            <li>Convert Design to Code</li>
-                            <li>Rest API Developer</li>
-                            <li>
+                            <li className="cursor-default">Design Flexible UI</li>
+                            <li className="cursor-default">Convert Design to Code</li>
+                            <li className="cursor-default">Rest API Developer</li>
+                            <li className="cursor-default">
                                 Code architecture maintainer so that it can be scalable down the
                                 road
                             </li>
-                            <li>
+                            <li className="cursor-default">
                                 Collaborate with engineers, and data implementation specialists to
                                 design and create advanced, elegant efficient systems
                             </li>
@@ -82,13 +82,13 @@ function Work() {
                         </h3>
 
                         <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                            <li>Design Flexible UI</li>
-                            <li>Convert Design to Code</li>
-                            <li>
+                            <li className="cursor-default">Design Flexible UI</li>
+                            <li className="cursor-default">Convert Design to Code</li>
+                            <li className="cursor-default">
                                 Code architecture maintainer so that it can be scalable down the
                                 road
                             </li>
-                            <li>
+                            <li className="cursor-default">
                                 Collaborate with engineers, and data implementation specialists to
                                 design and create advanced, elegant efficient systems
                             </li>
@@ -104,11 +104,13 @@ function Work() {
                         </h3>
 
                         <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                            <li>Design Flexible UI</li>
-                            <li>Convert Design to Code</li>
-                            <li>Implemented Dynamic functionalities</li>
-                            <li>Conversion of static designs to interactive</li>
-                            <li>REST APIs</li>
+                            <li className="cursor-default">Design Flexible UI</li>
+                            <li className="cursor-default">Convert Design to Code</li>
+                            <li className="cursor-default">Implemented Dynamic functionalities</li>
+                            <li className="cursor-default">
+                                Conversion of static designs to interactive
+                            </li>
+                            <li className="cursor-default">REST APIs</li>
                         </ul>
                     </article>
 
@@ -123,11 +125,11 @@ function Work() {
                         </h3>
 
                         <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                            <li>Design Flexible UI</li>
-                            <li>Convert Design to Code</li>
-                            <li>REST APIs</li>
-                            <li>MERN STACK Apps</li>
-                            <li>
+                            <li className="cursor-default">Design Flexible UI</li>
+                            <li className="cursor-default">Convert Design to Code</li>
+                            <li className="cursor-default">REST APIs</li>
+                            <li className="cursor-default">MERN STACK Apps</li>
+                            <li className="cursor-default">
                                 Collaborate with engineers, and data implementation specialists to
                                 design and create advanced, elegant efficient systems
                             </li>
