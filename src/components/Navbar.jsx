@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-scroll";
+import Resume from "../assets/Mubasher's CV.pdf";
 import Logo from "../assets/logo.svg";
-import Resume from "../assets/0_Mubasher's Resume.pdf";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -88,12 +88,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link
-            onClick={handleClick}
-            to="projects"
-            smooth={true}
-            duration={500}
-          >
+          <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
@@ -132,10 +127,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
-            <a
-              className="flex justify-between items-center w-full text-gray-300"
-              href={Resume}
-            >
+            <a className="flex justify-between items-center w-full text-gray-300" href={Resume}>
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
