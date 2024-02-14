@@ -21,7 +21,7 @@ const Contact = () => {
             Contact
           </h2>
           <p className="py-4">
-            {"//"} Submit the form below or shoot me an email - mubasherali0331@@gmail.com
+            {"//"} Submit the form below or shoot me an email - mubasherali0331@gmail.com
           </p>
         </div>
         <input className="bg-[#ccd6f6] p-2" type="text" placeholder="Name" name="name" required />
