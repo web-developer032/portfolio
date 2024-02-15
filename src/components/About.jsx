@@ -14,12 +14,10 @@ const About = () => {
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
-            <h2 className="text-4xl font-bold inline border-b-4 border-violet-700 ">
-              About
-            </h2>
+            <h2 className="text-4xl font-bold inline border-b-4 border-violet-700 ">About</h2>
           </div>
-          <div></div>
         </div>
+
         <article className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 ">
           <div className="text-left text-4xl font-bold  bg-violet-700 p-4 px-8 text-white skew-x-12">
             <p className="-skew-x-2">
@@ -30,21 +28,15 @@ const About = () => {
             <p className="-skew-x-2">
               I am passionate about building excellent{" "}
               <b className="border-b-4 border-violet-700">Websites</b> &{" "}
-              <b className="border-b-4 border-violet-700">Web Applications</b>{" "}
-              with <b className="border-b-4 border-violet-700">4 years</b> of
-              experience according to clients requirements. Which are ranging
-              from{" "}
-              <b className="border-b-4 border-violet-700">
-                individuals and small-businesses
-              </b>{" "}
-              all the way to{" "}
-              <b className="border-b-4 border-violet-700">
-                large enterprise corporations
-              </b>
+              <b className="border-b-4 border-violet-700">Web Applications</b> with{" "}
+              <b className="border-b-4 border-violet-700">4 years</b> of experience according to
+              clients requirements. Which are ranging from{" "}
+              <b className="border-b-4 border-violet-700">individuals and small-businesses</b> all
+              the way to{" "}
+              <b className="border-b-4 border-violet-700">large enterprise corporations</b>
               .
               <br />
-              What would you do if you had a expert web developer available at
-              your fingertips?
+              What would you do if you had a expert web developer available at your fingertips?
             </p>
           </div>
         </article>

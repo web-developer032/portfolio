@@ -6,6 +6,34 @@ import { Link } from "react-scroll";
 import Resume from "../assets/Mubasher's CV.pdf";
 import Logo from "../assets/logo.svg";
 
+const LINKS = [
+  {
+    link: "home",
+    label: "Home",
+  },
+  {
+    link: "about",
+    label: "About",
+  },
+  {
+    link: "skills",
+    label: "Skills",
+  },
+  {
+    link: "work",
+    label: "Work",
+    id: "has-work-link",
+  },
+  {
+    link: "projects",
+    label: "Projects",
+  },
+  {
+    link: "contact",
+    label: "Contact",
+  },
+];
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
@@ -18,40 +46,19 @@ const Navbar = () => {
 
       {/* menu */}
       <ul className="hidden md:flex">
-        <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li
-          id="has-work-link"
-          className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent"
-        >
-          <Link to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-
-        <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link to="projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        {LINKS.map((link) => {
+          return (
+            <li
+              key={link.link}
+              id={link.id}
+              className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent"
+            >
+              <Link to={link.link} smooth={true} duration={500}>
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       {/* Hamburger */}
@@ -67,36 +74,18 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </li>
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            Work
-          </Link>
-        </li>
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent">
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
+        {LINKS.map((link) => {
+          return (
+            <li
+              key={link.link}
+              className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent"
+            >
+              <Link onClick={handleClick} to={link.link} smooth={true} duration={500}>
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
 
       {/* Social icons */}

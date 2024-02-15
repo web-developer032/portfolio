@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProjectCard({ projName, projLink, projImg }) {
   return (
-    <div
+    <article
       style={{
         backgroundImage: `url(${projImg})`,
         backgroundPosition: "center",
@@ -22,6 +22,6 @@ export default function ProjectCard({ projName, projLink, projImg }) {
           </a>
         </div>
       </div>
-    </div>
+    </article>
   );
 }
