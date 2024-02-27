@@ -5,6 +5,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 import Resume from "../assets/Mubasher's CV.pdf";
 import Logo from "../assets/logo.svg";
+import { borderColor, theme } from "../utils/colors";
 
 const LINKS = [
   {
@@ -51,7 +52,7 @@ const Navbar = () => {
             <li
               key={link.link}
               id={link.id}
-              className="hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent"
+              className={`hover:text-${borderColor}-700 hover:border-b-2 hover:border-${borderColor}-700 border-b-2 border-transparent`}
             >
               <Link to={link.link} smooth={true} duration={500}>
                 {link.label}
@@ -71,14 +72,14 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : `absolute top-0 left-0 w-full h-screen bg-[${theme.colorPrimary}] flex flex-col justify-center items-center`
         }
       >
         {LINKS.map((link) => {
           return (
             <li
               key={link.link}
-              className="py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent"
+              className={`py-6 text-4xl hover:text-${borderColor}-700 hover:border-b-2 hover:border-${borderColor}-700 border-b-2 border-transparent`}
             >
               <Link onClick={handleClick} to={link.link} smooth={true} duration={500}>
                 {link.label}

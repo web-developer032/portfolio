@@ -1,4 +1,5 @@
 import React from "react";
+import { borderColor } from "../utils/colors";
 
 export default function ProjectCard({ projName, projLink, projImg }) {
   return (
@@ -9,7 +10,7 @@ export default function ProjectCard({ projName, projLink, projImg }) {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
-      className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div border-2 border-violet-700"
+      className={`shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div border-2 border-${borderColor}-700`}
     >
       {/* Hover Effects */}
       <div className="bg-grey opacity-0 group-hover:opacity-100 text-center mb-0">
