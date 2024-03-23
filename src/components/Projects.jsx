@@ -35,16 +35,16 @@ const projectsData = [
     projLink: "http://webdeveloper032.freecluster.eu/Natours/?i=1",
     projImg: natours,
   },
-  {
-    projName: "XoomMaps",
-    projLink: "https://v3.xoommaps.com/",
-    projImg: xoommaps,
-  },
-  {
-    projName: "ZeroDocs",
-    projLink: "https://zerodocs.com/",
-    projImg: zerodocs,
-  },
+  // {
+  //   projName: "XoomMaps",
+  //   projLink: "https://v3.xoommaps.com/",
+  //   projImg: xoommaps,
+  // },
+  // {
+  //   projName: "ZeroDocs",
+  //   projLink: "https://zerodocs.com/",
+  //   projImg: zerodocs,
+  // },
   {
     projName: "Booking Hotel Landing Page",
     projLink: "http://webdeveloper032.freecluster.eu/Trillo/?i=1",
