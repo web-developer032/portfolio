@@ -16,8 +16,6 @@ import natours from "../assets/natours.png";
 import ninjaPoll from "../assets/ninja-poll.png";
 import policat from "../assets/policat.png";
 import trillo from "../assets/trillo.png";
-import xoommaps from "../assets/xoommaps.png";
-import zerodocs from "../assets/zerodocs.png";
 
 import canvasCircular from "../assets/canvas-circular.jpeg";
 import canvasCollision from "../assets/canvasCollision.jpeg";
