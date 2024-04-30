@@ -25,7 +25,7 @@ import canvasGalacticLight from "../assets/canvasGalacticLight.png";
 import canvasGame from "../assets/canvasGame.png";
 import canvasGravity from "../assets/canvasGravity.jpeg";
 import canvasTrons from "../assets/canvasTrons.png";
-import { borderColor, theme } from "../utils/colors";
+import { violet, theme } from "../utils/colors";
 
 const projectsData = [
   {
@@ -167,15 +167,13 @@ const Projects = () => {
       name="projects"
       className="w-full  px-4"
       style={{
-        backgroundImage: `linear-gradient( -70deg, ${theme.colorTertiary} 0%, ${theme.colorTertiary} 30%, transparent 30% )`,
+        backgroundImage: `linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )`,
         backgroundAttachment: "fixed",
       }}
     >
       <section className="max-w-[1000px] mx-auto w-full mb-8">
         <div className="pb-8">
-          <h2
-            className={`text-4xl font-bold inline border-b-4 text-gray-300 border-${borderColor}-700`}
-          >
+          <h2 className={`text-4xl font-bold inline border-b-4 text-gray-300 border-violet-700`}>
             Projects
           </h2>
           <p className="py-6">{"//"} Check out some of my recent work</p>

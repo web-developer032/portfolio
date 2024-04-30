@@ -16,7 +16,7 @@ import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import Mongo from "../assets/mongo.png";
 import SQL from "../assets/sql.png";
-import { borderColor, theme } from "../utils/colors";
+import { violet, theme } from "../utils/colors";
 
 let skills = [
   {
@@ -126,16 +126,14 @@ const Skills = () => {
       name="skills"
       className="w-full px-4"
       style={{
-        backgroundImage: `linear-gradient( -70deg, ${theme.colorTertiary} 0%, ${theme.colorTertiary} 30%, transparent 30% )`,
+        backgroundImage: `linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )`,
         backgroundAttachment: "fixed",
       }}
     >
       {/* Container */}
       <section className="max-w-[1000px] mx-auto w-full">
         <div>
-          <h2 className={`text-4xl font-bold inline border-b-4 border-${borderColor}-700 `}>
-            Skills
-          </h2>
+          <h2 className={`text-4xl font-bold inline border-b-4 border-violet-700 `}>Skills</h2>
           <p className="py-4">{"//"} These are the technologies I've worked with</p>
         </div>
 
