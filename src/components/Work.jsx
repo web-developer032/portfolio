@@ -52,9 +52,7 @@ function Work() {
               <span className={`border-l-4 border-${borderColor}-700 pl-2 mb-1 block`}>
                 Software Engineer (MERN STACK)
               </span>
-              <span className="block text-sm pl-3">
-                ( TheHelpDesk (Remote: March 2022 - Oct 2022 ) )
-              </span>
+              <span className="block text-sm pl-3">( TheHelpDesk (March 2022 - Oct 2022 ) )</span>
             </h3>
 
             <ul className="text-1xl list-disc ml-6 max-w-3xl">
