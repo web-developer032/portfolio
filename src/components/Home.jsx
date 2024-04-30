@@ -1,6 +1,5 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import { violet, theme } from "../utils/colors";
 
 const Home = () => {
   return (

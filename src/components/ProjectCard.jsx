@@ -1,5 +1,4 @@
 import React from "react";
-import { violet } from "../utils/colors";
 
 export default function ProjectCard({ projName, projLink, projImg }) {
   return (

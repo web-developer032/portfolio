@@ -25,7 +25,6 @@ import canvasGalacticLight from "../assets/canvasGalacticLight.png";
 import canvasGame from "../assets/canvasGame.png";
 import canvasGravity from "../assets/canvasGravity.jpeg";
 import canvasTrons from "../assets/canvasTrons.png";
-import { violet, theme } from "../utils/colors";
 
 const projectsData = [
   {

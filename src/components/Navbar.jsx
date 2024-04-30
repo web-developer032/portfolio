@@ -5,7 +5,6 @@ import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
 import Resume from "../assets/Mubasher's CV.pdf";
 import Logo from "../assets/logo.svg";
-import { violet, theme } from "../utils/colors";
 
 const LINKS = [
   {

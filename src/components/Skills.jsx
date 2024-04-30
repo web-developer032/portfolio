@@ -16,7 +16,6 @@ import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import Mongo from "../assets/mongo.png";
 import SQL from "../assets/sql.png";
-import { violet, theme } from "../utils/colors";
 
 let skills = [
   {

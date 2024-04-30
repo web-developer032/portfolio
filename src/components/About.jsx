@@ -1,5 +1,4 @@
 import React from "react";
-import { violet, theme } from "../utils/colors";
 
 const About = () => {
   return (
@@ -20,7 +19,7 @@ const About = () => {
 
         <article className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 ">
           <div className="text-left text-4xl font-bold  bg-violet-700 p-4 px-8 text-white skew-x-12">
-            <p className="-skew-x-2">
+            <p className="skew-x-2">
               Hi. I'm Mubasher, nice to meet you. Please take a look around.
             </p>
           </div>
