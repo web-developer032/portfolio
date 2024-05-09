@@ -80,41 +80,55 @@ let skills = [
   },
 ];
 
+const styles = {
+  transformStyle: "preserve-3d",
+  transform: "perspective(1000px)",
+  cursor: "pointer ",
+};
+
 function Tilt(props) {
-  const { options, ...rest } = props;
   const tilt = useRef(null);
+
+  const options = {
+    scale: 1.1,
+    speed: 1000,
+    max: 10,
+
+    glare: true,
+    "max-glare": 0.7,
+    // "glare-prerender": false,
+  };
 
   useEffect(() => {
     VanillaTilt.init(tilt.current, options);
-  }, [options]);
+  }, []);
 
   return (
-    <article ref={tilt} {...rest}>
+    <article ref={tilt} style={styles} className="box pt-6 shadow-md skill-box">
       {props.children}
     </article>
   );
 }
 
 function Skill({ img, text }) {
-  const options = {
-    scale: 1.2,
-    speed: 1000,
-    max: 30,
-  };
-
   return (
-    <Tilt className="box" options={options}>
-      <div
-        className="pt-6 shadow-md skill-box"
+    <Tilt>
+      <img
+        className="w-20 h-20 mx-auto"
+        src={img}
+        alt={`${text} icon`}
         style={{
-          cursor: "pointer ",
+          transform: "translateZ(20px)",
+        }}
+      />
+      <h3
+        className="my-4 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-white to-blue-600"
+        style={{
+          transform: "translateZ(20px)",
         }}
       >
-        <img className="w-20 h-20 mx-auto" src={img} alt={`${text} icon`} />
-        <h3 className="my-4 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-white to-blue-600">
-          {text}
-        </h3>
-      </div>
+        {text}
+      </h3>
     </Tilt>
   );
 }
