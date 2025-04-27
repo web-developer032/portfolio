@@ -3,7 +3,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
-import Resume from "../assets/Mubasher's CV.pdf";
+import Resume from "../assets/Mubasher_Mukhtar_Resume.pdf";
 import Logo from "../assets/logo.svg";
 
 const LINKS = [
