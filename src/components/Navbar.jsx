@@ -78,7 +78,7 @@ const Navbar = () => {
           return (
             <li
               key={link.link}
-              className={`py-6 text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent`}
+              className={`py-6 text-2xl md:text-4xl hover:text-violet-700 hover:border-b-2 hover:border-violet-700 border-b-2 border-transparent`}
             >
               <Link
                 onClick={handleClick}

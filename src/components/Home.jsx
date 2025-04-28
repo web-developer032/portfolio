@@ -1,5 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import MubasherPic from "../assets/Mubasher.png";
 
 const Home = () => {
   return (
@@ -25,19 +26,25 @@ const Home = () => {
           Web Applications.
         </p>
 
-        <div>
-          <button
-            onClick={() => {
-              document.querySelector("#has-work-link a").click();
-            }}
-            className={`text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-violet-900 hover:border-violet-900`}
-          >
-            View Work
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3 " />
-            </span>
-          </button>
-        </div>
+        <button
+          onClick={() => {
+            document.querySelector("#has-work-link a").click();
+          }}
+          className={`text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-violet-900 hover:border-violet-900 w-max group`}
+        >
+          View Work
+          <span className="group-hover:rotate-90 duration-300">
+            <HiArrowNarrowRight className="ml-3 " />
+          </span>
+        </button>
+
+        <figure className="hidden lg:block">
+          <img
+            src={MubasherPic}
+            alt="Mubasher"
+            className="border-b-4 border-r-4 border-purple-600 rounded-full absolute right-0 -translate-x-1/2 top-1/2 -translate-y-1/2 w-1/4"
+          />
+        </figure>
       </div>
     </section>
   );
