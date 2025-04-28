@@ -86,18 +86,18 @@ const styles = {
   cursor: "pointer ",
 };
 
+const options = {
+  scale: 1.1,
+  speed: 1000,
+  max: 10,
+
+  glare: true,
+  "max-glare": 0.7,
+  // "glare-prerender": false,
+};
+
 function Tilt(props) {
   const tilt = useRef(null);
-
-  const options = {
-    scale: 1.1,
-    speed: 1000,
-    max: 10,
-
-    glare: true,
-    "max-glare": 0.7,
-    // "glare-prerender": false,
-  };
 
   useEffect(() => {
     VanillaTilt.init(tilt.current, options);
@@ -146,8 +146,14 @@ const Skills = () => {
       {/* Container */}
       <section className="max-w-[1000px] mx-auto w-full">
         <div>
-          <h2 className={`text-4xl font-bold inline border-b-4 border-violet-700 `}>Skills</h2>
-          <p className="py-4">{"//"} These are the technologies I've worked with</p>
+          <h2
+            className={`text-4xl font-bold inline border-b-4 border-violet-700 `}
+          >
+            Skills
+          </h2>
+          <p className="py-4">
+            {"//"} These are the technologies I've worked with
+          </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
