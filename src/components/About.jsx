@@ -32,9 +32,8 @@ const About = () => {
               I am passionate about building excellent{" "}
               <b className={`border-b-4 border-violet-700`}>Websites</b> &{" "}
               <b className={`border-b-4 border-violet-700`}>Web Applications</b>{" "}
-              with <b className={`border-b-4 border-violet-700`}>4 years</b> of
-              experience according to clients requirements. Which are ranging
-              from{" "}
+              with <b className={`border-b-4 border-violet-700`}>5 years</b> of
+              experience. Which are ranging from{" "}
               <b className={`border-b-4 border-violet-700`}>
                 individuals and small-businesses
               </b>{" "}

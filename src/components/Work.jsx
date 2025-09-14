@@ -2,9 +2,24 @@ import React from "react";
 
 const workExperiences = [
   {
-    title: "Sr Software Engineer (MERN STACK)",
-    company: "Skylinx Technologies",
-    duration: "Oct 2022 - Continue",
+    title: "Sr Software Engineer",
+    company: "Turing (Remote)",
+    duration: "Mar 2025 - Continue",
+    responsibilities: [
+      "Develop enterprise-grade web applications with React, Next.js, TypeScript, and Node.js.",
+      "Designed and developed backend APIs using Node.js, Express, and PostgreSQL.",
+      "Implemented authentication, caching, and database optimizations for performance.",
+      "Worked with AWS services (S3, EC2) to deploy and maintain scalable applications.",
+      "Led backend-focused sprint planning, troubleshooting, and CI/CD pipeline setup",
+      "Collaborate with cross-functional teams to design scalable solutions and optimize performance.",
+      "Mentor junior engineers and conduct code reviews to maintain high coding standards.",
+      "Contributed to architecture decisions, sprint planning, and delivery of large-scale features",
+    ],
+  },
+  {
+    title: "Sr Software Engineer",
+    company: "Skylinx Technologies (Hybrid)",
+    duration: "Oct 2022 - Sep 2025",
     responsibilities: [
       "Developed MERN stack applications, dedicating 40 hours weekly for on-time project delivery with code quality.",
       "Created responsive UIs using React, Next.js, ensuring pixel-perfect designs across devices.",
@@ -29,7 +44,7 @@ const workExperiences = [
   {
     title: "Sr Frontend Engineer",
     company: "ZonedWeb (Remote)",
-    duration: "June 2020 - Continue",
+    duration: "Jun 2020 - Oct 2022",
     responsibilities: [
       "Designed flexible UIs.",
       "Converted designs to code.",
@@ -40,7 +55,7 @@ const workExperiences = [
   {
     title: "Frontend Developer",
     company: "CodeFix",
-    duration: "2019 - 2022",
+    duration: "Sep 2019 - Mar 2022",
     responsibilities: [
       "Designed and developed reusable UI components for scalable web applications.",
       "Converted UI/UX designs into fully functional, responsive code.",

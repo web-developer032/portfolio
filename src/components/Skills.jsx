@@ -16,6 +16,9 @@ import FireBase from "../assets/firebase.png";
 import GitHub from "../assets/github.png";
 import Mongo from "../assets/mongo.png";
 import SQL from "../assets/sql.png";
+import NestJS from "../assets/nestjs-icon.svg";
+import Postgres from "../assets/postgresql-icon.svg";
+import AWS from "../assets/aws-icon.svg";
 
 let skills = [
   {
@@ -40,7 +43,7 @@ let skills = [
   },
   {
     img: Redux,
-    text: "Redux",
+    text: "RTK Query",
   },
   {
     img: Svelte,
@@ -59,6 +62,10 @@ let skills = [
     text: "NodeJS",
   },
   {
+    img: NestJS,
+    text: "NestJS",
+  },
+  {
     img: GraphQL,
     text: "GraphQL",
   },
@@ -67,12 +74,20 @@ let skills = [
     text: "MongoDB",
   },
   {
+    img: Postgres,
+    text: "PostgreSQL",
+  },
+  {
     img: SQL,
     text: "SQL",
   },
   {
     img: FireBase,
     text: "Firebase",
+  },
+  {
+    img: AWS,
+    text: "AWS",
   },
   {
     img: GitHub,

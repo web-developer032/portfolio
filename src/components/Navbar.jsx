@@ -3,7 +3,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
-import Resume from "../assets/Mubasher_Mukhtar_Resume.pdf";
+import Resume from "../assets/Sr. Software Engineer - Mubasher - CV.pdf";
 import Logo from "../assets/logo.svg";
 
 const LINKS = [
@@ -100,6 +100,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://pk.linkedin.com/in/expert-mernstack-developer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin size={20} />
             </a>
@@ -108,6 +110,8 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/web-developer032"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaGithub size={20} />
             </a>
