@@ -1,6 +1,6 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import MubasherPic from "../assets/Mubasher.png";
+import profile from "../assets/Mubasher.png";
 
 const Home = () => {
   return (
@@ -40,7 +40,7 @@ const Home = () => {
 
         <figure className="hidden lg:block">
           <img
-            src={MubasherPic}
+            src={profile}
             alt="Mubasher"
             className="border-b-4 border-r-4 border-purple-600 rounded-full absolute right-0 -translate-x-1/2 top-1/2 -translate-y-1/2 w-1/4"
           />
