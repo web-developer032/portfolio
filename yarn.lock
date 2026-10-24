@@ -1132,6 +1132,18 @@
   dependencies:
     postcss-value-parser "^4.2.0"
 
+"@emotion/is-prop-valid@^0.8.2":
+  version "0.8.8"
+  resolved "https://registry.npmjs.org/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz"
+  integrity sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==
+  dependencies:
+    "@emotion/memoize" "0.7.4"
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://registry.npmjs.org/@emotion/memoize/-/memoize-0.7.4.tgz"
+  integrity sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==
+
 "@eslint/eslintrc@^1.2.0":
   version "1.2.0"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.2.0.tgz"
@@ -1385,6 +1397,59 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
+
+"@motionone/animation@^10.12.0":
+  version "10.18.0"
+  resolved "https://registry.npmjs.org/@motionone/animation/-/animation-10.18.0.tgz"
+  integrity sha512-9z2p5GFGCm0gBsZbi8rVMOAJCtw1WqBTIPw3ozk06gDvZInBPIsQcHgYogEJ4yuHJ+akuW8g1SEIOpTOvYs8hw==
+  dependencies:
+    "@motionone/easing" "^10.18.0"
+    "@motionone/types" "^10.17.1"
+    "@motionone/utils" "^10.18.0"
+    tslib "^2.3.1"
+
+"@motionone/dom@10.12.0":
+  version "10.12.0"
+  resolved "https://registry.npmjs.org/@motionone/dom/-/dom-10.12.0.tgz"
+  integrity sha512-UdPTtLMAktHiqV0atOczNYyDd/d8Cf5fFsd1tua03PqTwwCe/6lwhLSQ8a7TbnQ5SN0gm44N1slBfj+ORIhrqw==
+  dependencies:
+    "@motionone/animation" "^10.12.0"
+    "@motionone/generators" "^10.12.0"
+    "@motionone/types" "^10.12.0"
+    "@motionone/utils" "^10.12.0"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
+
+"@motionone/easing@^10.18.0":
+  version "10.18.0"
+  resolved "https://registry.npmjs.org/@motionone/easing/-/easing-10.18.0.tgz"
+  integrity sha512-VcjByo7XpdLS4o9T8t99JtgxkdMcNWD3yHU/n6CLEz3bkmKDRZyYQ/wmSf6daum8ZXqfUAgFeCZSpJZIMxaCzg==
+  dependencies:
+    "@motionone/utils" "^10.18.0"
+    tslib "^2.3.1"
+
+"@motionone/generators@^10.12.0":
+  version "10.18.0"
+  resolved "https://registry.npmjs.org/@motionone/generators/-/generators-10.18.0.tgz"
+  integrity sha512-+qfkC2DtkDj4tHPu+AFKVfR/C30O1vYdvsGYaR13W/1cczPrrcjdvYCj0VLFuRMN+lP1xvpNZHCRNM4fBzn1jg==
+  dependencies:
+    "@motionone/types" "^10.17.1"
+    "@motionone/utils" "^10.18.0"
+    tslib "^2.3.1"
+
+"@motionone/types@^10.12.0", "@motionone/types@^10.17.1":
+  version "10.17.1"
+  resolved "https://registry.npmjs.org/@motionone/types/-/types-10.17.1.tgz"
+  integrity sha512-KaC4kgiODDz8hswCrS0btrVrzyU2CSQKO7Ps90ibBVSQmjkrt2teqta6/sOG59v7+dPnKMAg13jyqtMKV2yJ7A==
+
+"@motionone/utils@^10.12.0", "@motionone/utils@^10.18.0":
+  version "10.18.0"
+  resolved "https://registry.npmjs.org/@motionone/utils/-/utils-10.18.0.tgz"
+  integrity sha512-3XVF7sgyTSI2KWvTf6uLlBJ5iAgRgmvp3bpuOiQJvInd4nZ19ET8lX5unn30SlmRH7hXbBbH+Gxd0m0klJ3Xtw==
+  dependencies:
+    "@motionone/types" "^10.17.1"
+    hey-listen "^1.0.8"
+    tslib "^2.3.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -4264,6 +4329,27 @@ fraction.js@^4.1.2:
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
   integrity sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==
 
+framer-motion@^6.5.1:
+  version "6.5.1"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-6.5.1.tgz"
+  integrity sha512-o1BGqqposwi7cgDrtg0dNONhkmPsUFDaLcKXigzuTFC5x58mE8iyTazxSudFzmT6MEyJKfjjU8ItoMe3W+3fiw==
+  dependencies:
+    "@motionone/dom" "10.12.0"
+    framesync "6.0.1"
+    hey-listen "^1.0.8"
+    popmotion "11.0.3"
+    style-value-types "5.0.0"
+    tslib "^2.1.0"
+  optionalDependencies:
+    "@emotion/is-prop-valid" "^0.8.2"
+
+framesync@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/framesync/-/framesync-6.0.1.tgz"
+  integrity sha512-fUY88kXvGiIItgNC7wcTOl0SNRCVXMKSWW2Yzfmn7EKNc+MpCzcz9DhdHcdjbrtN3c6R4H5dTY2jiCpPdysEjA==
+  dependencies:
+    tslib "^2.1.0"
+
 fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
@@ -4505,6 +4591,11 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npmjs.org/he/-/he-1.2.0.tgz"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+hey-listen@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/hey-listen/-/hey-listen-1.0.8.tgz"
+  integrity sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==
 
 hoopy@^0.1.4:
   version "0.1.4"
@@ -6316,6 +6407,16 @@ pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
+popmotion@11.0.3:
+  version "11.0.3"
+  resolved "https://registry.npmjs.org/popmotion/-/popmotion-11.0.3.tgz"
+  integrity sha512-Y55FLdj3UxkR7Vl3s7Qr4e9m0onSnP8W7d/xQLsoJM40vs6UKHFdygs6SWryasTZYqugMjm3BepCF4CWXDiHgA==
+  dependencies:
+    framesync "6.0.1"
+    hey-listen "^1.0.8"
+    style-value-types "5.0.0"
+    tslib "^2.1.0"
+
 portfinder@^1.0.28:
   version "1.0.28"
   resolved "https://registry.npmjs.org/portfinder/-/portfinder-1.0.28.tgz"
@@ -7025,7 +7126,7 @@ react-dev-utils@^12.0.0:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0", react-dom@^17.0.2:
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0", react-dom@^17.0.2, "react-dom@>=16.8 || ^17.0.0 || ^18.0.0":
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -7122,7 +7223,7 @@ react-scroll@^1.8.6:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
-react@*, "react@^15.5.4 || ^16.0.0 || ^17.0.0", react@^17.0.2, "react@>= 16", react@17.0.2:
+react@*, "react@^15.5.4 || ^16.0.0 || ^17.0.0", react@^17.0.2, "react@>= 16", "react@>=16.8 || ^17.0.0 || ^18.0.0", react@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -7855,6 +7956,14 @@ style-loader@^3.3.1:
   resolved "https://registry.npmjs.org/style-loader/-/style-loader-3.3.1.tgz"
   integrity sha512-GPcQ+LDJbrcxHORTRes6Jy2sfvK2kS6hpSfI/fXhPt+spVzxF6LJ1dHLN9zIGmVaaP044YKaIatFaufENRiDoQ==
 
+style-value-types@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/style-value-types/-/style-value-types-5.0.0.tgz"
+  integrity sha512-08yq36Ikn4kx4YU6RD7jWEv27v4V+PUsOGa4n/as8Et3CuODMJQ00ENeAVXAeydX4Z2j1XHZF1K2sX4mGl18fA==
+  dependencies:
+    hey-listen "^1.0.8"
+    tslib "^2.1.0"
+
 stylehacks@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npmjs.org/stylehacks/-/stylehacks-5.1.0.tgz"
@@ -8122,7 +8231,7 @@ tslib@^1.8.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3:
+tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==

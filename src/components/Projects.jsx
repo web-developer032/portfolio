@@ -1,202 +1,99 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
 
-import Crypto from "../assets/Crypto.png";
-import hypepower from "../assets/Hypepower.png";
-import Louche from "../assets/Louche.png";
-import nextor from "../assets/Nextor.png";
-import space from "../assets/Space.png";
-import airheads from "../assets/airheads.png";
-import budgety from "../assets/budgety.png";
-import dexordi from "../assets/dexordi.png";
-import dexordiLanding from "../assets/dexordiLanding.png";
-import diceGame from "../assets/dice-game.png";
-import hostingPage from "../assets/hostingPage.png";
-import natours from "../assets/natours.png";
-import ninjaPoll from "../assets/ninja-poll.png";
-import policat from "../assets/policat.png";
-import trillo from "../assets/trillo.png";
-
-import canvasCircular from "../assets/canvas-circular.jpeg";
-import canvasCollision from "../assets/canvasCollision.jpeg";
-import canvasExpandable from "../assets/canvasExpandableCircles.jpeg";
-import canvasFirework from "../assets/canvasFirework.png";
-import canvasGalacticLight from "../assets/canvasGalacticLight.png";
-import canvasGame from "../assets/canvasGame.png";
-import canvasGravity from "../assets/canvasGravity.jpeg";
-import canvasTrons from "../assets/canvasTrons.png";
-
-const projectsData = [
+const projects = [
   {
-    projName: "Natours",
-    projLink: "http://webdeveloper032.freecluster.eu/Natours/?i=1",
-    projImg: natours,
-  },
-  // {
-  //   projName: "XoomMaps",
-  //   projLink: "https://v3.xoommaps.com/",
-  //   projImg: xoommaps,
-  // },
-  // {
-  //   projName: "ZeroDocs",
-  //   projLink: "https://zerodocs.com/",
-  //   projImg: zerodocs,
-  // },
-  {
-    projName: "Booking Hotel Landing Page",
-    projLink: "http://webdeveloper032.freecluster.eu/Trillo/?i=1",
-    projImg: trillo,
+    name: "Ejuno",
+    description:
+      "Enterprise REST APIs with OWASP-minded security, Stripe subscriptions and billing, secure webhooks, refunds, real-time notifications, and conflict-aware reservations.",
+    tags: ["Node.js", "Stripe", "REST APIs", "Webhooks"],
   },
   {
-    projName: "Real Estate Template",
-    projLink: "http://webdeveloper032.freecluster.eu/Nextor/?i=1",
-    projImg: nextor,
+    name: "Lucy",
+    description:
+      "A full-stack architectural overhaul: modularized a legacy platform, standardized errors and API responses, and introduced strict data validation to reduce critical bugs by 30%.",
+    tags: ["Architecture", "Middleware", "Validation", "TypeScript"],
   },
   {
-    projName: "Crypto Website",
-    projLink: "https://cryptodesign.netlify.app/",
-    projImg: Crypto,
+    name: "XoomMaps",
+    description:
+      "End-to-end frontend architecture with efficient data fetching and state management, powering real-time geospatial rendering and collaborative map sessions.",
+    tags: ["React", "Google Maps", "Geospatial", "Real time"],
+    link: "https://v3.xoommaps.com/",
   },
   {
-    projName: "PoliCat",
-    projLink: "https://policat-13417.web.app/",
-    projImg: policat,
-  },
-  {
-    projName: "Louche Portfolio",
-    projLink: "http://webdeveloper032.freecluster.eu/Portfolio-Louche/",
-    projImg: Louche,
-  },
-  {
-    projName: "Hosting Page",
-    projLink: "http://webdeveloper032.freecluster.eu/Hosting-Page/",
-    projImg: hostingPage,
-  },
-  {
-    projName: "Dice Game",
-    projLink: "https://dice-game-521db.web.app/",
-    projImg: diceGame,
-  },
-  {
-    projName: "Budgety App",
-    projLink: "http://webdeveloper032.freecluster.eu/Budgety/",
-    projImg: budgety,
-  },
-  {
-    projName: "DexOrdi Landing Page",
-    projLink: "https://dexordi-landing.web.app/",
-    projImg: dexordiLanding,
-  },
-
-  {
-    projName: "Space Project",
-    projLink: "https://spaceproject-4c47d.web.app/",
-    projImg: space,
-  },
-  {
-    projName: "HypePower",
-    projLink: "https://hypepower-8f5bc.web.app/",
-    projImg: hypepower,
-  },
-  {
-    projName: "AirHeads",
-    projLink: "https://www.airheads.asia/",
-    projImg: airheads,
-  },
-
-  {
-    projName: "Ninja Poll",
-    projLink: "https://ninja-poll-aa2a5.web.app",
-    projImg: ninjaPoll,
-  },
-
-  {
-    projName: "DexOrdi",
-    projLink: "https://dexordi-75bef.web.app/",
-    projImg: dexordi,
+    name: "ZeroDocs",
+    description:
+      "Document editing experience with React Context state management, rich-text editing features, and tiered subscription models.",
+    tags: ["React", "Rich text", "Context API", "Subscriptions"],
+    link: "https://zerodocs.com/",
   },
 ];
 
-const canvasProjectsData = [
-  {
-    projName: "Canvas Circular Motion",
-    projLink: "https://canvas-animation-63dbd.web.app/",
-    projImg: canvasCircular,
-  },
-  {
-    projName: "Canvas Firework",
-    projLink: "https://canvasfireworks.web.app/",
-    projImg: canvasFirework,
-  },
-  {
-    projName: "Canvas Galactic Light",
-    projLink: "https://canvasgalacticlight.web.app",
-    projImg: canvasGalacticLight,
-  },
-  {
-    projName: "Canvas Game",
-    projLink: "https://canvasgame.web.app/",
-    projImg: canvasGame,
-  },
-  {
-    projName: "Canvas Gravity",
-    projLink: "https://canvasgravity.web.app/",
-    projImg: canvasGravity,
-  },
-  {
-    projName: "Canvas Collision",
-    projLink: "https://canvasparticlecollision.web.app/",
-    projImg: canvasCollision,
-  },
-  {
-    projName: "Canvas Expandables",
-    projLink: "https://canvasrandomcircles.web.app/",
-    projImg: canvasExpandable,
-  },
-  {
-    projName: "Canvas Trons Show",
-    projLink: "https://canvastroncircles.web.app",
-    projImg: canvasTrons,
-  },
-];
-
-const Projects = () => {
+function Projects() {
   return (
-    <section
-      name="projects"
-      className="w-full  px-4"
-      style={{
-        backgroundImage: `linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )`,
-        backgroundAttachment: "fixed",
-      }}
+    <motion.section
+      id="projects"
+      className="section"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.55 }}
     >
-      <section className="max-w-[1000px] mx-auto w-full mb-8">
-        <div className="pb-8">
-          <h2 className={`text-4xl font-bold inline border-b-4 text-gray-300 border-violet-700`}>
-            Projects
-          </h2>
-          <p className="py-6">{"//"} Check out some of my recent work</p>
-        </div>
-
-        {/* Container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {projectsData.map((items, key) => (
-            <ProjectCard {...items} key={key} />
+      <div className="section-wrap">
+        <p className="eyebrow">Selected work</p>
+        <h2 className="section-title">
+          Products made for real-world complexity.
+        </h2>
+        <div className="project-grid">
+          {projects.map((project, index) => (
+            <motion.article
+              className="project-card"
+              key={project.name}
+              initial={{ opacity: 0, y: 30, rotateX: 3 }}
+              whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+              whileHover={{ y: -7, rotateX: -1, scale: 1.012 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{
+                duration: 0.45,
+                delay: index * 0.08,
+                ease: "easeOut",
+              }}
+              style={{
+                transformPerspective: 900,
+                transformOrigin: "center bottom",
+              }}
+            >
+              <div>
+                <span className="project-index">0{index + 1} / FEATURED</span>
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag) => (
+                    <span key={tag}>{tag}</span>
+                  ))}
+                </div>
+              </div>
+              {project.link ? (
+                <a
+                  className="project-link"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit project ↗
+                </a>
+              ) : (
+                <span className="project-link">
+                  Private project · details on request
+                </span>
+              )}
+            </motion.article>
           ))}
         </div>
-      </section>
-
-      <section className="max-w-[1000px] mx-auto  w-full ">
-        <p className="py-6">{"//"} Check out some of my canvas work</p>
-
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {canvasProjectsData.map((items, key) => (
-            <ProjectCard {...items} key={key} />
-          ))}
-        </div>
-      </section>
-    </section>
+      </div>
+    </motion.section>
   );
-};
+}
 
 export default Projects;

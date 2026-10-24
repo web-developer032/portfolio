@@ -1,56 +1,59 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const About = () => {
+function About() {
   return (
-    <section
-      name="about"
-      className="w-full h-screen px-4"
-      style={{
-        backgroundImage: `linear-gradient( -70deg, rgba(109, 40, 217, 0.9) 0%, rgba(109, 40, 217, 0.9) 30%, transparent 30% )`,
-        backgroundAttachment: "fixed",
-      }}
+    <motion.section
+      id="about"
+      className="section"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.55 }}
     >
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4">
-            <h2
-              className={`text-4xl font-bold inline border-b-4 border-violet-700 `}
-            >
-              About
+      <div className="section-wrap">
+        <p className="eyebrow">A little context</p>
+        <div className="about-grid">
+          <div>
+            <h2 className="section-title">
+              Engineering with a systems mindset.
             </h2>
+            <p className="about-copy">
+              I’m a <strong>Senior Full-Stack &amp; Backend Engineer</strong>{" "}
+              with 6+ years of experience architecting, scaling, and maintaining
+              high-throughput web applications and distributed cloud systems. I
+              work across Node.js, TypeScript, data stores, and product
+              interfaces, with a focus on reliable APIs, thoughtful
+              architecture, and teams that ship well together.
+            </p>
+            <p className="about-copy">
+              From FinTech payment flows to modular SaaS platforms, I care about
+              the details that make software secure, observable, and
+              maintainable long after launch.
+            </p>
+          </div>
+          <div className="stat-grid" aria-label="Career highlights">
+            <div className="stat">
+              <span className="stat-number">6+</span>
+              <span className="stat-label">Years building software</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">99.9%</span>
+              <span className="stat-label">System availability</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">−25%</span>
+              <span className="stat-label">API latency</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">−30%</span>
+              <span className="stat-label">Critical bugs</span>
+            </div>
           </div>
         </div>
-
-        <article className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 ">
-          <div className="text-left text-2xl md:text-4xl font-bold  bg-violet-700 p-4 px-8 text-white skew-x-12">
-            <p className="skew-x-2">
-              Hi. I'm Mubasher, nice to meet you. Please take a look around.
-            </p>
-          </div>
-          <div className="bg-white p-4 px-8 text-gray-900 text-left skew-x-12 text-sm md:text-lg">
-            <p className="-skew-x-2">
-              I am passionate about building excellent{" "}
-              <b className={`border-b-4 border-violet-700`}>Websites</b> &{" "}
-              <b className={`border-b-4 border-violet-700`}>Web Applications</b>{" "}
-              with <b className={`border-b-4 border-violet-700`}>5 years</b> of
-              experience. Which are ranging from{" "}
-              <b className={`border-b-4 border-violet-700`}>
-                individuals and small-businesses
-              </b>{" "}
-              all the way to{" "}
-              <b className={`border-b-4 border-violet-700`}>
-                large enterprise corporations
-              </b>
-              .
-              <br />
-              What would you do if you had a expert web developer available at
-              your fingertips?
-            </p>
-          </div>
-        </article>
       </div>
-    </section>
+    </motion.section>
   );
-};
+}
 
 export default About;

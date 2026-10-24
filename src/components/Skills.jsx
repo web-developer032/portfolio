@@ -1,184 +1,99 @@
-import React, { useEffect, useRef } from "react";
-import VanillaTilt from "vanilla-tilt";
+import React from "react";
+import { motion } from "framer-motion";
 
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import Tailwind from "../assets/tailwind.png";
-import JavaScript from "../assets/javascript.png";
-import ReactIcon from "../assets/react.png";
-import Redux from "../assets/redux.svg";
-import Svelte from "../assets/svelte-icon.svg";
-import NextJS from "../assets/next-js.svg";
-import Axios from "../assets/axios.svg";
-import Node from "../assets/node.png";
-import GraphQL from "../assets/GraphQL.svg";
-import FireBase from "../assets/firebase.png";
-import GitHub from "../assets/github.png";
-import Mongo from "../assets/mongo.png";
-import SQL from "../assets/sql.png";
-import NestJS from "../assets/nestjs-icon.svg";
-import Postgres from "../assets/postgresql-icon.svg";
-import AWS from "../assets/aws-icon.svg";
-
-let skills = [
-  {
-    img: HTML,
-    text: "HTML",
-  },
-  {
-    img: CSS,
-    text: "CSS",
-  },
-  {
-    img: Tailwind,
-    text: "Tailwind",
-  },
-  {
-    img: JavaScript,
-    text: "JavaScript",
-  },
-  {
-    img: ReactIcon,
-    text: "ReactJS",
-  },
-  {
-    img: Redux,
-    text: "RTK Query",
-  },
-  {
-    img: Svelte,
-    text: "Svelte",
-  },
-  {
-    img: NextJS,
-    text: "NextJS",
-  },
-  {
-    img: Axios,
-    text: "Axios",
-  },
-  {
-    img: Node,
-    text: "NodeJS",
-  },
-  {
-    img: NestJS,
-    text: "NestJS",
-  },
-  {
-    img: GraphQL,
-    text: "GraphQL",
-  },
-  {
-    img: Mongo,
-    text: "MongoDB",
-  },
-  {
-    img: Postgres,
-    text: "PostgreSQL",
-  },
-  {
-    img: SQL,
-    text: "SQL",
-  },
-  {
-    img: FireBase,
-    text: "Firebase",
-  },
-  {
-    img: AWS,
-    text: "AWS",
-  },
-  {
-    img: GitHub,
-    text: "GitHub",
-  },
-];
-
-const styles = {
-  transformStyle: "preserve-3d",
-  transform: "perspective(1000px)",
-  cursor: "pointer ",
+const categories = {
+  "Languages & core": [
+    "TypeScript",
+    "JavaScript ES6+",
+    "Node.js",
+    "SQL",
+    "HTML5",
+    "CSS3 / SASS",
+    "OOP",
+    "Data structures & algorithms",
+  ],
+  "Backend & data": [
+    "Express.js",
+    "PostgreSQL",
+    "MongoDB",
+    "MySQL",
+    "REST APIs",
+    "GraphQL",
+    "Microservices",
+    "Redis",
+    "AWS Cognito",
+    "Firebase",
+  ],
+  Frontend: [
+    "React.js",
+    "Next.js",
+    "Redux",
+    "Svelte.js",
+    "Tailwind CSS",
+    "Bootstrap",
+    "State management",
+  ],
+  "Delivery & tools": [
+    "Docker",
+    "Git / GitHub",
+    "Postman",
+    "SendGrid",
+    "CI/CD",
+    "System architecture",
+    "Agile / Scrum",
+    "Code review & mentorship",
+  ],
 };
 
-const options = {
-  scale: 1.1,
-  speed: 1000,
-  max: 10,
-
-  glare: true,
-  "max-glare": 0.7,
-  // "glare-prerender": false,
-};
-
-function Tilt(props) {
-  const tilt = useRef(null);
-
-  useEffect(() => {
-    VanillaTilt.init(tilt.current, options);
-  }, []);
-
+function Skills() {
   return (
-    <article ref={tilt} style={styles} className="box pt-6 shadow-md skill-box">
-      {props.children}
-    </article>
-  );
-}
-
-function Skill({ img, text }) {
-  return (
-    <Tilt>
-      <img
-        className="w-20 h-20 mx-auto"
-        src={img}
-        alt={`${text} icon`}
-        style={{
-          transform: "translateZ(20px)",
-        }}
-      />
-      <h3
-        className="my-4 font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-white to-blue-600"
-        style={{
-          transform: "translateZ(20px)",
-        }}
-      >
-        {text}
-      </h3>
-    </Tilt>
-  );
-}
-
-const Skills = () => {
-  return (
-    <section
-      name="skills"
-      className="w-full px-4"
-      style={{
-        backgroundImage: `linear-gradient( -70deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 30%, transparent 30% )`,
-        backgroundAttachment: "fixed",
-      }}
+    <motion.section
+      id="skills"
+      className="section"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.55 }}
     >
-      {/* Container */}
-      <section className="max-w-[1000px] mx-auto w-full">
-        <div>
-          <h2
-            className={`text-4xl font-bold inline border-b-4 border-violet-700 `}
-          >
-            Skills
-          </h2>
-          <p className="py-4">
-            {"//"} These are the technologies I've worked with
-          </p>
-        </div>
-
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          {skills.map((skill) => (
-            <Skill {...skill} key={skill.text} />
+      <div className="section-wrap">
+        <p className="eyebrow">Tools of the trade</p>
+        <h2 className="section-title">A practical, full-stack toolkit.</h2>
+        <div className="skills-layout">
+          {Object.entries(categories).map(([category, skills]) => (
+            <article className="skill-group" key={category}>
+              <h3>{category}</h3>
+              <motion.div
+                className="skill-list"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                variants={{
+                  visible: { transition: { staggerChildren: 0.045 } },
+                }}
+              >
+                {skills.map((skill) => (
+                  <motion.span
+                    className="skill-chip"
+                    key={skill}
+                    variants={{
+                      hidden: { opacity: 0, y: 10 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    whileHover={{ y: -4, scale: 1.04 }}
+                    whileFocus={{ y: -3 }}
+                    transition={{ duration: 0.2 }}
+                    tabIndex={0}
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </motion.div>
+            </article>
           ))}
         </div>
-      </section>
-    </section>
+      </div>
+    </motion.section>
   );
-};
+}
 
 export default Skills;

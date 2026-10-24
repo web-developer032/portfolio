@@ -1,124 +1,91 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-const workExperiences = [
+const experience = [
   {
-    title: "Sr Software Engineer",
-    company: "Turing (Remote)",
-    duration: "Mar 2025 - Continue",
-    responsibilities: [
-      "Develop enterprise-grade web applications with React, Next.js, TypeScript, and Node.js.",
-      "Designed and developed backend APIs using Node.js, Express, and PostgreSQL.",
-      "Implemented authentication, caching, and database optimizations for performance.",
-      "Worked with AWS services (S3, EC2) to deploy and maintain scalable applications.",
-      "Led backend-focused sprint planning, troubleshooting, and CI/CD pipeline setup",
-      "Collaborate with cross-functional teams to design scalable solutions and optimize performance.",
-      "Mentor junior engineers and conduct code reviews to maintain high coding standards.",
-      "Contributed to architecture decisions, sprint planning, and delivery of large-scale features",
+    dates: "MAR 2025 — PRESENT",
+    role: "Senior Software Engineer",
+    company: "Turing · Remote",
+    highlights: [
+      "Architect distributed backend microservices and high-throughput Node.js/TypeScript applications, maintaining 99.9% availability.",
+      "Optimized APIs and refactored legacy services, reducing latency by 25%.",
+      "Standardized local and staging environments with Docker and CI/CD improvements.",
     ],
   },
   {
-    title: "Sr Software Engineer",
-    company: "Skylinx Technologies (Hybrid)",
-    duration: "Oct 2022 - Sep 2025",
-    responsibilities: [
-      "Developed MERN stack applications, dedicating 40 hours weekly for on-time project delivery with code quality.",
-      "Created responsive UIs using React, Next.js, ensuring pixel-perfect designs across devices.",
-      "Reviewed code collaboratively, providing valuable feedback and promoting a teamwork environment.",
-      "Translated design mockups into functional user interfaces in collaboration with UI/UX designers.",
-      "Maintained scalable code architecture.",
-      "Collaborated with frontend and backend engineers to create advanced, efficient systems.",
-      "Conducted thorough testing, debugging, and adopted new technologies for continuous enhancement.",
+    dates: "OCT 2022 — SEP 2025",
+    role: "Senior Software Engineer",
+    company: "Skylinx Technologies · Lahore",
+    highlights: [
+      "Engineered enterprise MERN and TypeScript applications, delivering production features to demanding timelines.",
+      "Led code reviews and mentored developers in asynchronous programming and clean code.",
+      "Built React and Next.js interfaces integrated with secure backend authentication.",
     ],
   },
   {
-    title: "Software Engineer (MERN STACK)",
-    company: "TheHelpDesk",
-    duration: "March 2022 - Oct 2022",
-    responsibilities: [
-      "Developed high-quality, reusable UI components to enhance application scalability and maintainability.",
-      "Translated mockup designs into responsive web applications using HTML, CSS, ReactJS, and Svelte.",
-      "Converted static websites into dynamic web applications, improving user engagement.",
-      "Integrated RESTful APIs and third-party services for real-time data rendering.",
+    dates: "MAR 2022 — OCT 2022",
+    role: "Software Engineer / Senior Frontend Engineer",
+    company: "TheHelpDesk · Lahore",
+    highlights: [
+      "Designed Node.js and Express REST APIs to improve data access across core platform features.",
+      "Modernized component architecture and optimized web application performance.",
     ],
   },
   {
-    title: "Sr Frontend Engineer",
-    company: "ZonedWeb (Remote)",
-    duration: "Jun 2020 - Oct 2022",
-    responsibilities: [
-      "Designed flexible UIs.",
-      "Converted designs to code.",
-      "Maintained scalable code architecture.",
-      "Collaborated with engineers and data specialists to build efficient systems.",
+    dates: "JUN 2020 — PRESENT",
+    role: "Web Developer",
+    company: "ZonedWeb · Wyoming, US",
+    highlights: [
+      "Built reusable UI libraries and transformed static websites into dynamic React and Svelte applications.",
+      "Integrated third-party APIs, authentication, and cloud services for reliable real-time data sync.",
     ],
   },
   {
-    title: "Frontend Developer",
-    company: "CodeFix",
-    duration: "Sep 2019 - Mar 2022",
-    responsibilities: [
-      "Designed and developed reusable UI components for scalable web applications.",
-      "Converted UI/UX designs into fully functional, responsive code.",
-      "Implemented dynamic functionalities for enhanced user interaction.",
-      "Transformed static designs into interactive web experiences.",
-      "Developed and integrated RESTful APIs to support dynamic operations.",
-      "Collaborated cross-functionally to ensure seamless integration.",
-    ],
-  },
-  {
-    title: "Freelance Software Engineer",
-    company: "Self-Employed via Fiverr",
-    duration: "2019 – Present",
-    responsibilities: [
-      "Designed and developed flexible, scalable, responsive UIs for client projects.",
-      "Converted complex designs into production-ready code using ReactJS and TailwindCSS.",
-      "Built and integrated RESTful APIs for real-time applications.",
-      "Developed full-stack MERN applications tailored to diverse business needs.",
-      "Collaborated with clients and engineers to deliver efficient software systems.",
+    dates: "MAR 2019 — MAR 2022",
+    role: "Web Developer",
+    company: "CodeFix · Bahawalpur",
+    highlights: [
+      "Created responsive cross-browser interfaces and secure backend endpoints for data processing.",
     ],
   },
 ];
 
 function Work() {
   return (
-    <section
-      name="work"
-      className="w-full px-4"
-      style={{
-        backgroundImage:
-          "linear-gradient(-70deg, rgba(109, 40, 217, 0.9) 0%, rgba(109, 40, 217, 0.9) 30%, transparent 30%)",
-        backgroundAttachment: "fixed",
-      }}
+    <motion.section
+      id="work"
+      className="section"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.08 }}
+      transition={{ duration: 0.55 }}
     >
-      <section className="max-w-[1000px] mx-auto w-full mb-8">
-        <div className="pb-2">
-          <h2 className="text-4xl font-bold inline border-b-4 text-gray-300 border-violet-700">
-            Work
-          </h2>
-          <p className="py-6">{"//"} Previous Work Experience</p>
-        </div>
-
-        <section className="work-content-container">
-          {workExperiences.map((work, idx) => (
-            <article key={idx} className="work-content ml-6 mb-8">
-              <h3 className="work-heading text-2xl font-bold text-gray-300 mb-3">
-                <span className="border-l-4 border-violet-700 pl-2 mb-1 block">
-                  {work.title}
-                </span>
-                <span className="block text-sm pl-3">
-                  ({work.company} - {work.duration})
-                </span>
-              </h3>
-              <ul className="text-1xl list-disc ml-6 max-w-3xl">
-                {work.responsibilities.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
+      <div className="section-wrap">
+        <p className="eyebrow">Where I’ve been</p>
+        <h2 className="section-title">Experience built in production.</h2>
+        <div className="experience-list">
+          {experience.map((item) => (
+            <article
+              className="experience-item"
+              key={`${item.company}-${item.dates}`}
+            >
+              <p className="experience-date">{item.dates}</p>
+              <div>
+                <div className="experience-role">
+                  <h3>{item.role}</h3>
+                  <span>{item.company}</span>
+                </div>
+                <ul className="experience-bullets">
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight}>{highlight}</li>
+                  ))}
+                </ul>
+              </div>
             </article>
           ))}
-        </section>
-      </section>
-    </section>
+        </div>
+      </div>
+    </motion.section>
   );
 }
 

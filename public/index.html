@@ -1,44 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Web site created using create-react-app" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101311" />
+    <meta
+      name="description"
+      content="Mubasher Mukhtar is a Senior Software & AI Engineer building dependable products and distributed systems."
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-        <title>Mubasher's | Portfolio</title>
+    <title>Mubasher Mukhtar | Senior Software &amp; AI Engineer</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyBgMDb1djzayZFlJvrGLjx7tlF7uFJj1Io",
+      authDomain: "mubasher-portfolio.firebaseapp.com",
+      projectId: "mubasher-portfolio",
+      storageBucket: "mubasher-portfolio.appspot.com",
+      messagingSenderId: "327936374895",
+      appId: "1:327936374895:web:bb73ebd84de00b9a6ef59a",
+    };
 
-        <style>
-            html {
-                scroll-padding: 15rem 0 0 !important;
-                scroll-padding-top: 15rem !important;
-            }
-        </style>
-    </head>
-    <body>
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <main id="root"></main>
-    </body>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBgMDb1djzayZFlJvrGLjx7tlF7uFJj1Io",
-            authDomain: "mubasher-portfolio.firebaseapp.com",
-            projectId: "mubasher-portfolio",
-            storageBucket: "mubasher-portfolio.appspot.com",
-            messagingSenderId: "327936374895",
-            appId: "1:327936374895:web:bb73ebd84de00b9a6ef59a",
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-    </script>
+    const app = initializeApp(firebaseConfig);
+  </script>
 </html>

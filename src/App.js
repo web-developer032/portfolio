@@ -1,24 +1,24 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import Home from "./components/Home";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
+    <div className="portfolio-shell">
       <Navbar />
-      <section className={`bg-[#0a192f] text-gray-300  grid gap-16`}>
+      <main>
         <Home />
         <About />
-        <Skills />
         <Work />
+        <Skills />
         <Projects />
         <Contact />
-      </section>
-    </>
+      </main>
+    </div>
   );
 }
 
